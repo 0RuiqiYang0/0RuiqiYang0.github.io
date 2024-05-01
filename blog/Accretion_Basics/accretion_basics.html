@@ -50,84 +50,79 @@ MathJax = {
 						<!-- Post -->
 						<section class="post">
 							<header class="major">
-								<h1>Basics of Accretion disks</h1>
+								<h1>吸积盘基础</h1>
 								<p>Ruiqi Yang</p>
 								<span class="date">May 01, 2024</span>
 							</header>
 
 							<div class="box">
-								<p><b>Preface:</b> My goal in writing this learning notes is to provide a brief introduction to the accretion disks.
-									The content covered is elementary and far from comprehensive, but I will refine and update gradually. Hope these notes could be helpful to you, let's get started!  :)</p>
+								<p><b>前言：</b> 写这篇学习笔记，旨在提供一个简短的吸积盘基础介绍。我会在学习的同时慢慢更新。希望它对你能有所帮助，让我们开始吧！ :)</p>
 							</div>
 
 							<hr />
 
-							<h2>Content</h2>
+							<h2>目录</h2>
 							<ul>
-								<li><a href="#Introduction">1. Introduction</a></li>
-								<li><a href="#Accretion: general">2. Accetion: general</a></li>
-								<li><a href="#Adiabatic accretion">2.1 Adiabatic accretion</a></li>
+								<li><a href="#Introduction">1. 简介</a></li>
+								<li><a href="#Accretion: general">2. 吸积理论基础</a></li>
+								<li><a href="#Adiabatic accretion">2.1 绝热吸积</a></li>
 							</ul>
 
-							<h2 id="Introduction">1. Introduction</h2>
-							<p>Accretion disks exist in many scales: millions of kilometers in low mass X-ray binaries, Active galactic nuclei, cataclysmic variables, protostellars, protoplanets, etc. </p>
-							<p>Accretion disks, jets and outflows are observational connected. Lacking direct observations of disks, theory has tried to provide models.
-							 with varying degrees of success. Uncertainty still exists with respect to some basic questions. In this situation, progress made by
-							 observations or modeling of a particular class of objects has direct impact on the understanding of other objects, including the enigmatic
-							 connection with jets.</p>
+							<h2 id="Introduction">1. 简介</h2>
+							<p>吸积盘遍及宇宙的许多场景： 低质量X射线双星、活动星系核（AGN）、激变变星、原恒星、原行星等等。</p>
+							<p>吸积盘、喷流和外向流在观测上存在联系。缺乏对吸积盘的直接观测，理论尝试提供一些模型，并取得了不同程度上的成功。但一些基本问题仍然存在着不确定性。
+								这种情况下，对特定的天体观察或建模取得的进展，会直接影响对其他天体的理解（例如与喷流的神秘联系）。</p>
 
 							<span class="image fit"><img src="img/Black_Holes_-_Monsters_in_Space.jpg" alt="" /></span>
-							<p style="text-align: center;" id="Figure1">Figure 1: Black Hole, Accretion Disk and Jet (Artist's Concept) | Credit:<a href="https://www.jpl.nasa.gov/images/pia16695-black-holes-monsters-in-space-artists-concept">NASA/JPL-Caltech</a></p>
+							<p style="text-align: center;" id="Figure1">Figure 1: 黑洞、吸积盘和喷流 (艺术家概念图) | Credit:<a href="https://www.jpl.nasa.gov/images/pia16695-black-holes-monsters-in-space-artists-concept">NASA/JPL-Caltech</a></p>
 
-							<h2 id="Accretion: general">2. Accretion: general</h2>
-							<p>Gas falling into a point mass potential
+							<h2 id="Accretion: general">2. 吸积理论基础</h2>
+							<p>气体落入一点质量势场
 							\begin{equation}
 								\Phi = - \frac{GM}{r}
 								\label{eq:1.1}
 							\end{equation}
-							from a distance \(r_0\) to a distance \(r\) converts gravitational into kinetic energy by an amount \(\Delta\Phi=GM(1/r-1/r_0)\). Assuming that the starting distance
-							 is large, \(\Delta\Phi=GM/r\). The speed of arrival, the free-fall speed \(v_{ff}\), is
+							从距离 \(r_0\) 到 \(r\)，将引力势能转换为动能：\(\Delta\Phi=GM(1/r-1/r_0)\)。假设初始位置很远，则有 \(\Delta\Phi=GM/r\)。到达时的速度-自由落体速度 \(v_{ff}\)-为
 							\begin{equation}
 								\frac12 v^2_{ff}=\frac{GM}{r}
 								\label{eq:1.2}
 							\end{equation}</p>
-							<p>If the gas is then brought to rest, the amount of energy \(e\) dissipated per unit mass is
+							<p>如果之后气体被吸积，速度变为零，则单位质量耗散的能量为 \(e\)
 							\begin{equation}
 								e=\frac12 v^2_{ff}=\frac{GM}{r}
 								\label{eq:1.3}
 							\end{equation}</p>
-							<p>If the gas goes into a circular Kepler orbit at distance \(r\)
+							<p>如果气体进入距离 \(r\) 开普勒圆轨道，则有
 							\begin{equation}
 								e=\frac12\frac{GM}{r}
 								\label{eq:1.4}
 							\end{equation}</p>
-							<p>The dissipated energy may go into internal energy of the gas, and into radiation, which escapes to infinity (usually in the form of photons,
-								but neutrino losses are also significant in some cases)</p>
+							<p>耗散的能量可能变为气体内能、辐射（通常以光子形式，但中微子损耗能在一些情况也是十分重要的）。</p>
 
-							<h3 id="Adiabatic accretion">2.1 Adiabatic accretion</h3>
-							<p>Any mechanical energy dissipated stays locally in the flow, which is called an adiabatic flow. For an ideal gas with constant ratio of specific heats \(\gamma\),
-							 the internal energy per unit mass is
+							<h3 id="Adiabatic accretion">2.1 绝热吸积</h3>
+							<p>绝热流体：不考虑辐射损耗，任何机械能耗散都留在局域吸积流中。对于一固定绝热指数 \(\gamma\) 的绝热理想气体，单位质量内能为
 							\begin{equation}
 								e=\frac{P}{(\gamma-1)\rho}
 								\label{eq:1.5}
 							\end{equation}</p>
-							<p>With Equation of State (EoS)
+							<p>状态方程(EoS)为
 							\begin{equation}
 								P=\frac{\mathcal{R}\rho T}{\mu}
 								\label{eq:1.6}
 							\end{equation}
-							where \(\mathcal{R}\) is the gas constant and \(\mu\) is the mean atomic weight per particle. We can obtain the temperature fo the gas after the dissipation has taken place
+							这里，\(\mathcal{R}\) 是气体常数，\(\mu\) 是每个粒子的平均原子质量。我们可以得到耗散发生后气体的温度
 							\begin{equation}
 								T=\frac12 (\gamma-1)T_{vir}
 								\label{eq:1.7}
 							\end{equation}
-							where \(T_{vir}\) is the virial temperature, defined as
+							这里，\(T_{vir}\)是位力温度，定义为
 							\begin{equation}
 								T_{vir}=\frac{GM\mu}{\mathcal{R}r}=\frac{gr\mu}{\mathcal{R}}
 								\label{eq:1.8}
 							\end{equation}
-							where \(g\) is</p>
-							<p>In equation \eqref{eq:1.7}.</p>
+							其中 \(g\) 是距离 \(r\) 处的重力加速度。在一温度接近 \(T_{vir}\) 的大气中，声速 \(c_s=(\gamma \mathcal{R}T/\mu)^{1/2}\)
+							 接近系统逃逸速度。流体静力压强标高，\(H\equiv\mathcal{R}T/(\mu g)=\frac12(\gamma-1)r\) ，正比于 \(r\)。这样的大气可能在一
+							相对很短的时标</p>
 <!--							<p><span class="image left"><img src="img/Eric.jpg" alt="" /></span></p>-->
 
 							<hr />
