@@ -70,7 +70,7 @@ MathJax = {
 
 							<h2 id="Introduction">1. 简介</h2>
 							<p>吸积盘遍及宇宙的许多场景： 低质量X射线双星、活动星系核（AGN）、激变变星、原恒星、原行星等等。</p>
-							<p>吸积盘、喷流和外向流在观测上存在联系。缺乏对吸积盘的直接观测，理论尝试提供一些模型，并取得了不同程度上的成功。但一些基本问题仍然存在着不确定性。
+							<p>吸积盘、喷流和外向流在观测上存在联系。理论尝试提供一些模型，并取得了不同程度上的成功。但一些基本问题仍然存在着不确定性。
 								这种情况下，对特定的天体观察或建模取得的进展，会直接影响对其他天体的理解（例如与喷流的神秘联系）。</p>
 
 							<span class="image fit"><img src="img/Black_Holes_-_Monsters_in_Space.jpg" alt="" /></span>
@@ -82,7 +82,7 @@ MathJax = {
 								\Phi = - \frac{GM}{r}
 								\label{eq:1.1}
 							\end{equation}
-							从距离 \(r_0\) 到 \(r\)，将引力势能转换为动能：\(\Delta\Phi=GM(1/r-1/r_0)\)。假设初始位置很远，则有 \(\Delta\Phi=GM/r\)。到达时的速度-自由落体速度 \(v_{ff}\)-为
+							从距离 \(r_0\) 到 \(r\)，将引力势能转换为动能：\(\Delta\Phi=GM(1/r-1/r_0)\)。假设初始位置很远，则有 \(\Delta\Phi=GM/r\)。到达时的速度-自由落体速度 \(v_{ff}\)为
 							\begin{equation}
 								\frac12 v^2_{ff}=\frac{GM}{r}
 								\label{eq:1.2}
@@ -105,7 +105,7 @@ MathJax = {
 								e=\frac{P}{(\gamma-1)\rho}
 								\label{eq:1.5}
 							\end{equation}</p>
-							<p>状态方程(EoS)为
+							<p>状态方程（EoS）为
 							\begin{equation}
 								P=\frac{\mathcal{R}\rho T}{\mu}
 								\label{eq:1.6}
@@ -115,14 +115,25 @@ MathJax = {
 								T=\frac12 (\gamma-1)T_{vir}
 								\label{eq:1.7}
 							\end{equation}
-							这里，\(T_{vir}\)是位力温度，定义为
+							\(T_{vir}\)是位力温度，定义为
 							\begin{equation}
 								T_{vir}=\frac{GM\mu}{\mathcal{R}r}=\frac{gr\mu}{\mathcal{R}}
 								\label{eq:1.8}
 							\end{equation}
 							其中 \(g\) 是距离 \(r\) 处的重力加速度。在一温度接近 \(T_{vir}\) 的大气中，声速 \(c_s=(\gamma \mathcal{R}T/\mu)^{1/2}\)
 							 接近系统逃逸速度。流体静力压强标高，\(H\equiv\mathcal{R}T/(\mu g)=\frac12(\gamma-1)r\) ，正比于 \(r\)。这样的大气可能在一
-							相对很短的时标</p>
+							相对很短的时标内，以星风的形式蒸发掉。这一点可以由能量守恒得出：如果能量不通过辐射形式损失，流体在落入重力势时获得的能量也足以将其再次移出。</p>
+							<p>一个简单的例子，球对称绝热吸积（Bondi，1952）。这样的吸积只能在 \(\gamma\le 5/3\) 时才能发生。\(\gamma\) 越低，吸积气体温度越低，因而越容易
+							留在势场中。发生大致球对称绝热吸积的一个经典情况是超新星爆缩：当中心温度高到可以使辐射场分解原子核， \(gamma\) 下降，包层通过吸积激波塌缩到正在形成的中子星。
+							另一个情况是索恩-祖特阔夫（Thorne-Zytkow）天体，那里的 \(\gamma\) 由于粒子对产生而降得很低，引起黑洞的绝热吸积。</p>
+							<p>球对称绝热吸积很快，在力学时标（与自由落体时标或开普勒轨道时标等阶）下进行
+							\begin{equation}
+								\tau_{d}=\frac{r}{v_K}=\Omega_K^{-1}=\left(\frac{r^3}{GM}\right)^{1/2}
+								\label{eq:1.9}
+							\end{equation}
+							\(v_{K}\) 和 \(\Omega_K\) 分别是开普勒轨道速度和角频率。</p>
+							<p>当辐射损耗不可忽略时，吸积气体可以不受 \(\gamma\) 大小的限制而保持冷却，这时Bondi的临界值 \(\gamma=5/3\) 将不再有效。在这种情况下，
+							吸积盘的温度通常要远低于位力温度。</p>
 <!--							<p><span class="image left"><img src="img/Eric.jpg" alt="" /></span></p>-->
 
 							<hr />
