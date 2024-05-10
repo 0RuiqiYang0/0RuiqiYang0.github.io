@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Blog - Ruiqi Yang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<script>
+MathJax = {
+  tex: {
+    tags: 'ams'
+  }
+};
+</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../index.html" class="logo">Ruiqi Yang</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../../index.html">About</a></li>
+							<li class="active"><a href="../../blog/blog.html">Blog</a></li>
+							<li><a href="../../CV/cv.html">CV</a></li>
+							<li><a href="../../Photograph/photograph.html">Photograph</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="mailto:yangrq9@mail2.sysu.edu.cn" class="icon brands"><span class="label">E-Mail</span><i class="far fa-envelope"></i></a></li>
+							<li><a href="https://github.com/0RuiqiYang0" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h1>两体问题</h1>
+								<span class="date">May 10, 2024</span>
+							</header>
+
+							<div class="box">
+								<p><b>前言：</b> 牛顿引力下两质点的相互作用过程，对行星形成和更复杂的多体问题都十分重要，并且有完全解析解。本学习笔记基于 Philip. J. Armitage 的 <i><a href="https://www.cambridge.org/us/universitypress/subjects/physics/planetary-systems-and-astrobiology/astrophysics-planet-formation-2nd-edition?format=HB&isbn=9781108420501">Astrophysics of Planet Formation</a></i>。</p>
+							</div>
+
+							<hr />
+
+							<h2>目录</h2>
+							<ul>
+								<li><a href="#Introduction">1. 两体问题的解</a></li>
+								<li><a href="#Accretion: general">1.1 束缚轨道</a></li>
+							</ul>
+
+							<h2 id="Solution to the Two-Body problem">1. 两体问题的解</h2>
+							<span class="image fit"><img src="img/Two-body.png" alt="" /></span>
+							<p style="text-align: center;" id="Figure1">Figure 1: 两体问题示意图 | Credit: <a href="https://www.cambridge.org/us/universitypress/subjects/physics/planetary-systems-and-astrobiology/astrophysics-planet-formation-2nd-edition?format=HB&isbn=9781108420501">Philip.J.Armitage</a></p>
+							<p>考虑两质点在牛顿引力下相互作用。二者受力为
+							\begin{align}
+								\boldsymbol{F_1}&=m_1\boldsymbol{\ddot{r_1}}=\frac{Gm_1m_2}{r^3}\boldsymbol{r}, \\
+								\boldsymbol{F_2}&=m_2\boldsymbol{\ddot{r_2}}=-\frac{Gm_1m_2}{r^3}\boldsymbol{r},
+							\end{align}</p>
+							这里 \(r=|\boldsymbol{r}|\)。我们通过相对位移 \(\boldsymbol{r}=\boldsymbol{r_2}-\boldsymbol{r_1}\)，把问题化简为一个方程
+							\begin{equation}
+								\boldsymbol{\ddot{r}}=\boldsymbol{\ddot{r_2}}-\boldsymbol{\ddot{r_1}}=-\frac{G(m_1+m_2)}{r^3}\boldsymbol{r}
+							\end{equation}
+							<p>定义约化质量 \(\mu\equiv G(m_1+m_2)\)，方程变为
+							\begin{equation}
+								\boldsymbol{\ddot{r}}=-\frac{\mu}{r^3}\boldsymbol{r}
+							\end{equation}</p>
+							<p>为了解这个方程，我们在轨道平面上建立极坐标系(\(r\),\(\theta\))。我们将会用到位矢的时间一阶和二阶倒数
+							\begin{align}
+								\boldsymbol{r}&=r\boldsymbol{\hat{r}} \\
+								\boldsymbol{\dot{r}}&=\dot{r}\boldsymbol{\hat{r}}+r\dot{\theta}\boldsymbol{\hat{\theta}} \\
+								\boldsymbol{\ddot{r}}&=\left(\ddot{r}-r\dot{\theta^2}\right)\boldsymbol{\hat{r}}+\frac{1}{r}\frac{\text{d}}{\text{d}t}\left(r^2\dot{\theta}\right)\boldsymbol{\hat{\theta}}
+							\end{align}</p>
+							<p>这里 \(\boldsymbol{\hat{r}}\) 是径向单位矢量，\(\boldsymbol{\hat{\theta}}\) 是方位角单位矢量，垂直于 \(\boldsymbol{\hat{r}}\)。</p>
+
+
+							<h3 id="Bound Orbits">1.1 束缚轨道</h3>
+
+							To be continued.
+							
+
+
+
+							<!--							<p><span class="image left"><img src="img/Eric.jpg" alt="" /></span></p>-->
+
+							<hr />
+
+							<h2>Bibliography</h2>
+							<ol>
+								<li>Philip.J.Armitage. Astrophysics of Planet Formation (2nd Edition). <a href="https://www.cambridge.org/us/universitypress/subjects/physics/planetary-systems-and-astrobiology/astrophysics-planet-formation-2nd-edition?format=HB&isbn=9781108420501" >ISBN: 9781108420501</a>.</li>
+							</ol>
+
+							<hr />
+							<ul class="actions special">
+									<li><a href="../blog.html" class="button">Back to Blog list</a></li>
+							</ul>
+						</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Zhuhai Campus, Sun Yat-sen University, Zhuhai 519082, China</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:yangrq9@mail2.sysu.edu.cn">yangrq9@mail2.sysu.edu.cn</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/0RuiqiYang0" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Ruiqi Yang 2024</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
