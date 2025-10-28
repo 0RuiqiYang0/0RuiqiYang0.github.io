@@ -1,0 +1,6 @@
+# robots.txt for GitHub Pages personal site
+
+User-agent: *
+Allow: /
+
+Sitemap: https://0ruiqiyang0.github.io/sitemap.xml
